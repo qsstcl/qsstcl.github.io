@@ -3,10 +3,14 @@ import React from 'react';
 import { Space } from 'antd';
 import Header from '../component/Header';
 import {GithubOutlined, LinkedinOutlined, MailOutlined, ZhihuOutlined} from "@ant-design/icons";
+import {Helmet} from "react-helmet";
 
 export default function Home() {
     return (
         <div style={{fontFamily:'Verdana,sans-serif'}}>
+            <Helmet>
+                <title>Guangshuo Qin</title>
+            </Helmet>
             <Space direction="vertical" style={{ marginLeft: '30%', width: '100%', textAlign: 'start' }}>
                 <Header />
                 <h1>Hi, I'm Qss!</h1>
